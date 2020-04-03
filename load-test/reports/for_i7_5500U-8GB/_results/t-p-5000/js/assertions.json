@@ -1,0 +1,10 @@
+{
+  "simulation": "simulations.AdvancedSimulation",
+  "simulationId": "advancedsimulation",
+  "start": 1585716326398,
+  "description": "",
+  "scenarios": ["Users-API"],
+  "assertions": [
+
+  ]
+}

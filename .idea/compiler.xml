@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Gradle Imported" enabled="true">
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.12/lombok-1.18.12.jar" />
+        </processorPath>
+        <module name="blocking-vs-nonblocking-benchmark.non-blocking-netty-mongo.main" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="8">
+      <module name="blocking-tomcat-postgresql.main" target="1.8" />
+      <module name="blocking-tomcat-postgresql.test" target="1.8" />
+      <module name="delay-service.main" target="1.8" />
+      <module name="delay-service.test" target="1.8" />
+      <module name="non-blocking-netty-mongo.main" target="13" />
+      <module name="non-blocking-netty-mongo.test" target="13" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

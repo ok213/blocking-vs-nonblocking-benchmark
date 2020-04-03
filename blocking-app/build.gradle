@@ -1,0 +1,49 @@
+buildscript {
+    ext {
+        springBootVersion = '2.2.5.RELEASE'
+    }
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+    }
+}
+
+plugins {
+    id 'org.springframework.boot' version '2.2.5.RELEASE'
+    id 'io.spring.dependency-management' version '1.0.9.RELEASE'
+    id 'java'
+}
+
+group = 'com.example'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '13'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    testImplementation('org.springframework.boot:spring-boot-starter-test') {
+        exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
+    }
+}
+
+test {
+    useJUnitPlatform()
+}
+
+bootRun {
+    jvmArgs = [
+            "-Xms512m",                         // мин и макс значение java памяти под объекты (heap/»куча»)
+            "-Xmx512m",
+            "-Djava.net.preferIPv4Stack=true",
+            "-Djava.net.preferIPv6Addresses=false",
+            "-Dspring.output.ansi.enabled=ALWAYS",
+//            "-Dserver.tomcat.accept-count=10000",
+//            "-Dserver.tomcat.max-threads=10000",
+//            "-Dserver.tomcat.max-connections=10000"
+    ]
+}

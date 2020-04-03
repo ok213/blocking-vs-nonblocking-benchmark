@@ -1,0 +1,8 @@
+//rootProject.name = 'blocking-vs-nonblocking-benchmark'
+
+include 'load-test'
+include 'non-blocking-netty-mongo'
+include 'blocking-tomcat-postgresql'
+include 'delay-service'
+include 'blocking-app'
+include 'reactive-app'

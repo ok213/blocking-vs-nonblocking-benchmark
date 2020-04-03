@@ -1,0 +1,10 @@
+{
+  "simulation": "simulations.AdvancedSimulationMongo",
+  "simulationId": "advancedsimulationmongo",
+  "start": 1585718991041,
+  "description": "",
+  "scenarios": ["Users-API"],
+  "assertions": [
+
+  ]
+}
